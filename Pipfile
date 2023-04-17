@@ -5,6 +5,12 @@ name = "pypi"
 
 [packages]
 jupyter = "*"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+missingno = "*"
+scikit-learn = "*"
+yellowbrick = "*"
 
 [dev-packages]
 
