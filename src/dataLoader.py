@@ -1,4 +1,4 @@
-from sklearn.metrics import accuracy_score, f1_score
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import cross_val_score, GridSearchCV, ParameterGrid, train_test_split
@@ -22,11 +22,10 @@ def get_user_test_traingi_set(test_size_percent):
 
 
 def save_results(clf, X_test, y_test, nclf, dataf):
-    dataf.loc[nclf, 'test acc'] = accuracy_score(y_test, clf.predict(X_test))
-    # dataf.loc[nclf, 'test f1 score (0)'] = f1_score(y_test, clf.predict(X_test), pos_label=0)
-    # dataf.loc[nclf, 'test f1 score (1)'] = f1_score(y_test, clf.predict(X_test), pos_label=1)
+    dataf.loc[nclf, 'acc'] = accuracy_score(y_test, clf.predict(X_test))
+    dataf.loc[nclf,'prec'] = precision_score(y_test, clf.predict(X_test), average='weighted')
+    dataf.loc[nclf,'recall'] = recall_score(y_test, clf.predict(X_test), average='weighted')
     dataf.loc[nclf, 'test f1 score (W)'] = f1_score(y_test, clf.predict(X_test), average='macro')
-    # df.loc[nclf,'ROC AUC'] = roc_auc_score(y_test, clf.predict_proba(X_test)[:,1])
     return dataf
 results_df = pd.DataFrame()
 
