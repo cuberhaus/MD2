@@ -31,7 +31,7 @@ def getdf():
 def get_test_training_df(df_p, test_size_percent):
     df2 = df_p.drop(['User'], axis=1)
     df2 = df2.drop(['Class'], axis=1)
-    labels_Users = df['User']
+    labels_Users = df_p['User']
     X_train, X_test, y_train, y_test, = train_test_split(df2, labels_Users, test_size=test_size_percent,
                                                          random_state=42)
     return X_train, X_test, y_train, y_test
