@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.model_selection import cross_val_score, GridSearchCV, ParameterGrid, train_test_split
 
 dataset_path = 'allUsers.lcl.csv'
-dataset_path = "../data/tommaso_data/allUsers.lcl.csv"
+dataset_path = "../data/allUsers.lcl.csv"
 df = pd.read_csv(dataset_path)
 # knn Cannot work with mining data, so replace them with a 0
 

@@ -1,1 +1,1 @@
-all: src/dataLoader.py src/Bivariate.ipynb src/KNN.ipynb src/meta_learning.ipynb src/naiveBayes.ipynb src/nullables.ipynb src/univariate_analisis.ipynb src/SVM.ipynb src/
+all: data/ docs/MD2.pdf docs/MD2.pptx docs/Report-DM-Project2.pdf src/dataLoader.py src/Bivariate.ipynb src/KNN.ipynb src/meta_learning.ipynb src/naiveBayes.ipynb src/nullables.ipynb src/univariate_analisis.ipynb src/SVM.ipynb src/decision_tree.ipynb
