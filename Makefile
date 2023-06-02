@@ -1,0 +1,1 @@
+all: src/dataLoader.py src/Bivariate.ipynb src/KNN.ipynb src/meta_learning.ipynb src/naiveBayes.ipynb src/nullables.ipynb src/univariate_analisis.ipynb src/SVM.ipynb src/
