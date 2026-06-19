@@ -3,3 +3,9 @@ project.tar: MD.mp4 Group_names.txt data/allUsers.lcl.csv data/info.txt docs/MD2
 
 clean:
 	rm -f project.tar
+
+##@ Understand (knowledge graph)
+
+.PHONY: understand-dashboard
+understand-dashboard: ## Launch the Understand Anything knowledge-graph dashboard (graph dir = repo root)
+	@node -e "require(require('os').homedir()+'/.understand-anything/repo/understand-anything-plugin/packages/dashboard/launch.cjs')"
