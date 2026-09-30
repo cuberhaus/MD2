@@ -1,6 +1,6 @@
 # MD2
 
-Frozen coursework: second Data Mining (MD) project at FIB-UPC. Classification and EDA on a user dataset using KNN, Naive Bayes, SVM, and decision trees with cross-validation and grid-search hyperparameter tuning.
+Coursework: second Data Mining (MD) project at FIB-UPC. Classification and EDA on a user dataset using KNN, Naive Bayes, SVM, and decision trees with cross-validation and grid-search hyperparameter tuning.
 
 ## Architecture
 
@@ -15,6 +15,6 @@ Frozen coursework: second Data Mining (MD) project at FIB-UPC. Classification an
 
 ## Pitfalls
 
-- Frozen coursework — do not refactor or modernize. Notebooks reference relative paths to `data/`, so run them from `src/`.
+- Notebooks reference relative paths to `data/`, so run them from `src/`.
 
 See [README.md](README.md).
